@@ -283,6 +283,31 @@
     </div>
   </section>
 
+  <section class="aigcmkt-pixi-playground" id="aigcmkt-pixi-playground" aria-labelledby="pixi-playground-title">
+    <div class="pixi-playground-inner">
+      <div class="pixi-playground-head">
+        <div>
+          <p class="pixi-kicker">PIXIJS INTERACTION PLAYGROUND</p>
+          <h2 id="pixi-playground-title">如果把 GEO 做成一个可玩的搜索增长游戏</h2>
+        </div>
+        <p>
+          拖动官网、案例、白皮书和 RAG 知识库这些“信源资产”，投喂给 AI 搜索引擎。你会看到推荐率、排名、粒子反馈和结果卡片实时变化。
+        </p>
+      </div>
+      <div class="pixi-playground-shell">
+        <div class="pixi-playground-toolbar" role="tablist" aria-label="PixiJS 互动模式">
+          <button class="pixi-mode is-active" type="button" role="tab" aria-selected="true" data-pixi-mode="mission">信源投喂</button>
+          <button class="pixi-mode" type="button" role="tab" aria-selected="false" data-pixi-mode="battle">排名冲刺</button>
+          <button class="pixi-mode" type="button" role="tab" aria-selected="false" data-pixi-mode="map">平台雷达</button>
+        </div>
+        <div class="pixi-canvas-wrap">
+          <canvas id="aigcmktPixiPlayground"></canvas>
+          <div class="pixi-help">拖动发光资产到中心引擎 · 点击模式切换玩法 · 鼠标经过会有实时反馈</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <section class="dmaa-section">
     <div class="dmaa-card">
       <div class="dmaa-bg-text">AWARD</div>
@@ -1526,6 +1551,7 @@
   </div>
 </footer>
 <script type="module" src="/src/concept-lab.js"></script>
+<script type="module" src="/src/pixi-playground.js"></script>
 </body>
 </html>
 
