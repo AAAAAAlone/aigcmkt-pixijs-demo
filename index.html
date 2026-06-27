@@ -236,28 +236,16 @@
         <button class="cta trigger-slide" type="button">检查你的品牌渗透率</button>
       </div>
 
-      <div class="card-stage yb-banner-cards-section aigcmkt-demo-stage" aria-label="可交互的 AI 搜索结果手机演示">
-        <div class="aigcmkt-demo-rig" id="aigcmktDemoRig">
-          <div class="aigcmkt-demo-phone" id="aigcmktDemoPhone">
-            <div class="aigcmkt-phone-shadow" aria-hidden="true"></div>
-            <div class="aigcmkt-phone-shell">
-              <div class="aigcmkt-phone-side aigcmkt-phone-side-left" aria-hidden="true"></div>
-              <div class="aigcmkt-phone-side aigcmkt-phone-side-right" aria-hidden="true"></div>
-              <div class="aigcmkt-phone-frame">
-                <div class="aigcmkt-phone-island" aria-hidden="true"></div>
-                <div class="aigcmkt-phone-screen" id="aigcmktPixiPhoneScreen"></div>
-                <div class="aigcmkt-phone-controls">
-                  <input id="aigcmktDemoKeyword" value="SEO优化服务" aria-label="输入 AI 搜索关键词" />
-                  <button id="aigcmktDemoSearch" type="button">确定</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="aigcmkt-demo-depth-card depth-card-a">官网信源</div>
-          <div class="aigcmkt-demo-depth-card depth-card-b">AI 推荐</div>
-          <div class="aigcmkt-demo-depth-card depth-card-c">品牌渗透率</div>
+      <div class="card-stage yb-banner-cards-section" aria-label="AI 平台推荐截图卡片">
+        <div class="yb-banner-card yb-banner-card-1" data-original-index="0">
+          <div class="yb-banner-card-image1" role="img" aria-label="Deepseek GEO排名优化">Deepseek GEO排名优化</div>
         </div>
-        <div class="aigcmkt-demo-caption">拖动手机调整角度，在屏幕里输入关键词，点击确定后滚动查看官网文案生成的 AI 搜索结果。</div>
+        <div class="yb-banner-card yb-banner-card-2" data-original-index="1">
+          <div class="yb-banner-card-image2" role="img" aria-label="Kimi GEO排名优化">Kimi GEO排名优化</div>
+        </div>
+        <div class="yb-banner-card yb-banner-card-3" data-original-index="2">
+          <div class="yb-banner-card-image3" role="img" aria-label="GPT GEO排名优化">GPT GEO排名优化</div>
+        </div>
       </div>
     </section>
 
@@ -265,6 +253,35 @@
       <div class="logo-track" id="logoTrack"></div>
     </div>
   </main>
+
+  <section class="aigcmkt-concept-lab" id="aigcmkt-3d-concept-lab" aria-labelledby="aigcmkt-concept-title">
+    <div class="concept-lab-bg" aria-hidden="true"></div>
+    <div class="concept-lab-inner">
+      <div class="concept-lab-copy">
+        <p class="concept-lab-kicker">3D GEO PROOF LAB</p>
+        <h2 id="aigcmkt-concept-title">把 AI 搜索结果，做成用户能亲手查看的证据现场</h2>
+        <p>
+          加搜科技 AIGCMKT 提供 GEO、SEO、AI 搜索和社媒搜索优化服务，帮助企业官网、案例和白皮书成为 AI 可引用信源。
+        </p>
+        <div class="concept-lab-actions" role="tablist" aria-label="3D 展示方案">
+          <button class="concept-mode is-active" type="button" role="tab" aria-selected="true" data-concept-mode="phone">3D 手机证据</button>
+          <button class="concept-mode" type="button" role="tab" aria-selected="false" data-concept-mode="journey">搜索路径动画</button>
+          <button class="concept-mode" type="button" role="tab" aria-selected="false" data-concept-mode="compare">Before / After</button>
+          <button class="concept-mode" type="button" role="tab" aria-selected="false" data-concept-mode="radar">AI 推荐雷达</button>
+        </div>
+        <div class="concept-lab-note" id="conceptLabNote">
+          一部可旋转的 3D 手机，屏幕贴搜索结果截图，高亮“加搜科技 AIGCMKT”靠前位置。
+        </div>
+      </div>
+      <div class="concept-lab-stage" aria-label="3D AI 搜索展示预览">
+        <canvas id="aigcmktConceptCanvas"></canvas>
+        <div class="concept-orbit-label label-brand">加搜科技 AIGCMKT</div>
+        <div class="concept-orbit-label label-source">官网信源</div>
+        <div class="concept-orbit-label label-rank">推荐靠前</div>
+        <div class="concept-stage-hint">拖动旋转 · 滚轮缩放 · 切换方案</div>
+      </div>
+    </div>
+  </section>
 
 <section class="dmaa-section">
     <div class="dmaa-card">
@@ -1508,7 +1525,7 @@
     </div>
   </div>
 </footer>
-<script type="module" src="/src/demo-phone.js"></script>
+<script type="module" src="/src/concept-lab.js"></script>
 </body>
 </html>
 
